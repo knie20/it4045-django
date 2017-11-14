@@ -3,7 +3,7 @@
 # from django.db import models
 #
 # class CareerOpportunity(models.Model):
-#     source_name=models.CharField(max_length=50)
+#     source_name=gmodels.CharField(max_length=50)
 #     source_url = models.CharField(max_length=500)
 #     content = models.CharField(max_length=1000)
 #

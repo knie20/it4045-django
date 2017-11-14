@@ -1,5 +1,10 @@
+
+
 __author__ = 'pridemai'
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
+from django.contrib.auth.decorators import login_required
+from django.views.decorators.http import require_http_methods
+from django.views.decorators.csrf import  csrf_exempt
 from django.http.response import HttpResponse, HttpResponseRedirect
 
 from models import *
@@ -25,6 +30,8 @@ class SimpleClass:
         print t
     def __str__(self):
         return self.var1+" "+self.var2
+
+@require_http_methods(['GET'])
 def index(request):
     # print "something happened1"
     # stdlogger.info("Call to contactform method")
@@ -40,6 +47,11 @@ def logout(request):
     do_logout(request)
     return HttpResponseRedirect("/")
     # return do_logout(request)
+@csrf_exempt
+@require_http_methods(["GET"])
+@login_required
+def foo(request):
+    return HttpResponse(json.dumps({"foo":"bar"}))
 
 
 # def do_login(request):
