@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../flask-demo/.idea/flaskdemo.iml" filepath="$PROJECT_DIR$/../flask-demo/.idea/flaskdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/generic_django_project.iml" filepath="$PROJECT_DIR$/.idea/generic_django_project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/it4045-django.iml" filepath="$PROJECT_DIR$/.idea/it4045-django.iml" />
       <module fileurl="file://$PROJECT_DIR$/../python-demo/.idea/python-demo.iml" filepath="$PROJECT_DIR$/../python-demo/.idea/python-demo.iml" />
     </modules>
   </component>
 </project>
-

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="918719975">
+  <component name="DataSourceManagerImpl" format="xml" hash="2095115555">
     <data-source source="LOCAL" name="Sqlite (Xerial) - storage.db" uuid="97cb3624-537e-4239-99f6-3c3b2dbe4447">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
@@ -25,6 +25,16 @@
         </library>
       </libraries>
     </data-source>
+    <data-source source="LOCAL" name="it4045" uuid="0e369ae8-262e-4ddd-a3e8-2d8dbbc2d38c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/storage.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$PROJECT_DIR$/sqlitejdbc-v056.jar</url>
+        </library>
+      </libraries>
+    </data-source>
   </component>
 </project>
-

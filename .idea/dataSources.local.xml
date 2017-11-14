@@ -3,7 +3,11 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Sqlite (Xerial) - storage.db" uuid="97cb3624-537e-4239-99f6-3c3b2dbe4447">
       <secret-storage>master_key</secret-storage>
-      <auth-required>false</auth-required>
+    </data-source>
+    <data-source name="Django default" uuid="55f15f70-e16f-4a08-8481-44b20a9e822b" />
+    <data-source name="Show.Me" uuid="78e1bd91-13ab-4251-a986-edd8d7a5bf19" />
+    <data-source name="it4045" uuid="0e369ae8-262e-4ddd-a3e8-2d8dbbc2d38c">
+      <secret-storage>master_key</secret-storage>
     </data-source>
   </component>
 </project>
