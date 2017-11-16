@@ -10,6 +10,7 @@ from django.http.response import HttpResponse, HttpResponseRedirect
 from models import *
 # from functions import authenticate
 from auth_functions import do_auth, do_logout
+from functions import create_new_car, get_car, filter_cars
 import json
 # Python logging package
 import logging
@@ -53,6 +54,12 @@ def logout(request):
 def foo(request):
     return HttpResponse(json.dumps({"foo":"bar"}))
 
+def car_creation_submit(request):
+    create_new_car(**{k: v for (k,v) in request.POST.iteritems()} )
+
+def car_creation(request):
+    return render(request, "car_form.html",{})
+
 
 # def do_login(request):
 #
@@ -60,6 +67,10 @@ def foo(request):
 #
 #     return HttpResponse(reversed("index"))
 #
+
+
+def filter_cars_view(request):
+    return HttpResponse(filter_cars(**{k: v for (k, v) in request.GET.iteritems()}))
 
 def candidates_all(request):
     candidates = []
