@@ -1,4 +1,4 @@
-{% extends "base.html"%}
+{% extends "base.html" %}
 {% block content %}
         <form method="post" action="{% url "car_creation_submit" %}">{% csrf_token %}
         Make <input  type="text" name="make"/> <br>

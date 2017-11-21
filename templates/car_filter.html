@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <table>
+    <tr><th>Make</th><th>Model</th><th>Year</th></tr>
+    {% for car in cars %}
+        <tr><td>{{ car.make }}</td><td>{{ car.model }}</td><td>{{ car.year }}</td><td><a href="/edit_car/?id={{ car.id }}">edit</a></td><td><a href="/remove_car/?id={{ car.id }}">delete</a></td></tr>
+    {% endfor %}
+    </table>
+{% endblock %}

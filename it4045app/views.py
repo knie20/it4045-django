@@ -10,7 +10,7 @@ from django.http.response import HttpResponse, HttpResponseRedirect
 from models import *
 # from functions import authenticate
 from auth_functions import do_auth, do_logout
-from functions import create_new_car, get_car, filter_cars
+from functions import create_new_car, get_car, filter_cars, update_car, delete_car
 import json
 # Python logging package
 import logging
@@ -69,8 +69,20 @@ def car_creation(request):
 #
 
 
+def edit_car(request):
+    return render(request, "edit_car_form.html", {"car":get_car(**{k: v for (k, v) in request.GET.iteritems()})})
+
+def edit_car_submit(request):
+    update_car(**{k: v for (k, v) in request.POST.iteritems()})
+    return  HttpResponseRedirect("/filter_cars/?id="+request.POST.get("id"))
+
+def remove_car(request):
+    delete_car(id=request.GET.get("id"))
+    return HttpResponseRedirect("/filter_cars/")
+
 def filter_cars_view(request):
-    return HttpResponse(filter_cars(**{k: v for (k, v) in request.GET.iteritems()}))
+    return render(request, "car_filter.html", {"cars":filter_cars(**{k: v for (k, v) in request.GET.iteritems()})})
+    # return HttpResponse()
 
 def candidates_all(request):
     candidates = []

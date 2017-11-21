@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+        <form method="post" action="{% url "edit_car_submit" %}">{% csrf_token %}
+            <input type="hidden" name="id" value="{{ car.id }}"/>
+        Make <input  type="text" name="make" value="{{ car.make }}"/> <br>
+        Model <input  type="text" value="{{ car.model }}" name="model"/> <br>
+        Year <input  type="number" value="{{ car.year }}" name="year"/> <br>
+        Color <input  type="text" value="{{ car.color }}" name="color"/> <br>
+        Description <input  type="text" value="{{ car.description.description }}" name="description"/> <br>
+        Mileage <input  type="number" value="{{ car.description.mileage}}" name="mileage"/> <br>
+        MPG <input  type="number" value="{{ car.description.mpg}}" name="mpg"/> <br>
+        Displacement<input  type="number" value="{{ car.description.motor.displacement }}" name="displacement"/> <br>
+        Family <input  type="text"  value="{{ car.description.motor.family}}" name="family"/> <br>
+        Horsepower<input  type="number" value="{{ car.description.motor.horsepower}}" name="horsepower"/> <br>
+        RPM <input  type="number" value="{{ car.description.motor.rpm }}" name="rpm"/> <br>
+        Transmission Type <input  type="text" value="{{ car.description.transmission.type }}" name="transmission_type"/> <br>
+        Transmission Speed <input type="number" value="{{ car.description.transmission.speed }}" name="speed"/>
+        <input type="submit" value="Create"/><br>
+        </form>
+{% endblock %}

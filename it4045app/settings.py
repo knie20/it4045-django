@@ -10,7 +10,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+BASE_DIR = "/Users/andrewsmiley/PycharmProjects/divvy16.0.2/it4045-django/"
 
 
 # Quick-start development settings - unsuitable for production
@@ -66,7 +66,9 @@ DATABASES = {
     }
 }
 
-STATIC_ROOT=os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'static')
+print os.getcwd()
+STATIC_ROOT="/Users/andrewsmiley/PycharmProjects/divvy16.0.2/it4045-django/static/"
+
 
 STATIC_URL = '/static/'
 
@@ -75,7 +77,7 @@ STATIC_URL = '/static/'
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-#    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+   # 'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
 TEMPLATE_LOADERS = (
@@ -85,7 +87,7 @@ TEMPLATE_LOADERS = (
 #     'django.template.loaders.eggs.Loader',
 )
 TEMPLATE_DIRS = (
-    STATIC_ROOT + '/templates/',
+    "/Users/andrewsmiley/PycharmProjects/divvy16.0.2/it4045-django/templates/",
 )
 MEDIA_ROOT = BASE_DIR + '/media/'
 
@@ -106,7 +108,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/dev/howto/static-files/
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 
 # LOGGING = {
 #     'version': 1,
