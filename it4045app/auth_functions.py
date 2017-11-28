@@ -13,7 +13,7 @@ def do_auth(request):
     else:
         kwargs['error'] = "Username/Password is invalid"
 
-    return render(request, 'index.html', kwargs)
+    return kwargs
 
 
 def do_logout(request):

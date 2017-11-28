@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_http_methods
 from django.views.decorators.csrf import  csrf_exempt
 from django.http.response import HttpResponse, HttpResponseRedirect
+from django.core.urlresolvers import reverse
 
 from models import *
 # from functions import authenticate
@@ -41,7 +42,8 @@ def index(request):
     return render(request, 'index.html', {'test': "my data","simple_class":SimpleClass(), "variables":["1","2","3"]})
 
 def login(request):
-    return do_auth(request)
+    kwargs = do_auth(request)
+    return HttpResponseRedirect(reverse("edit_car"))
 
 
 def logout(request):
