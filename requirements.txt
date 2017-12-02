@@ -1,7 +1,7 @@
 appdirs==1.4.0
 backports.ssl-match-hostname==3.5.0.1
 cffi==1.9.1
-Django==1.7
+Django==1.11.7
 gevent==1.2.1
 greenlet==0.4.11
 olefile==0.44

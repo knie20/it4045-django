@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2095115555">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
     <data-source source="LOCAL" name="Sqlite (Xerial) - storage.db" uuid="97cb3624-537e-4239-99f6-3c3b2dbe4447">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/storage.db</jdbc-url>
-      <libraries />
     </data-source>
     <data-source source="LOCAL" name="Django default" uuid="55f15f70-e16f-4a08-8481-44b20a9e822b">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
       <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/storage.db</jdbc-url>
-      <libraries />
     </data-source>
     <data-source source="LOCAL" name="Show.Me" uuid="78e1bd91-13ab-4251-a986-edd8d7a5bf19">
       <driver-ref>sqlite.xerial</driver-ref>

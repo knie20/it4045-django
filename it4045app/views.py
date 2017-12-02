@@ -28,8 +28,6 @@ class SimpleClass:
     def to_string(self):
         return str(self)
 
-    def test(self, t):
-        print t
     def __str__(self):
         return self.var1+" "+self.var2
 

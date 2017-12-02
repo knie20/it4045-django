@@ -5,7 +5,6 @@ def do_auth(request):
     kwargs = {"error": ""}
 
     user = authenticate(username=request.POST.get("username"), password=request.POST.get("password"))
-    print user
 
     if user:
         do_login(request, user)

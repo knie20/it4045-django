@@ -37,9 +37,9 @@ class CarsTestCase(TestCase):
 
 
     def test_get_cars(self):
-        print "tests running"
+        print ("tests running")
         for car in Car.objects.filter():
-            print  car.make + " " +car.model
+            print  (car.make + " " +car.model)
 
     def test_get_car(self):
         car = Car.objects.get(id=1)

@@ -2,12 +2,24 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Sqlite (Xerial) - storage.db" uuid="97cb3624-537e-4239-99f6-3c3b2dbe4447">
+      <database-info product="SQLite" version="3.6.14.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
-    <data-source name="Django default" uuid="55f15f70-e16f-4a08-8481-44b20a9e822b" />
-    <data-source name="Show.Me" uuid="78e1bd91-13ab-4251-a986-edd8d7a5bf19" />
+    <data-source name="Django default" uuid="55f15f70-e16f-4a08-8481-44b20a9e822b">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+    </data-source>
+    <data-source name="Show.Me" uuid="78e1bd91-13ab-4251-a986-edd8d7a5bf19">
+      <database-info product="SQLite" version="3.6.14.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
+      <introspection-schemas>*:</introspection-schemas>
+    </data-source>
     <data-source name="it4045" uuid="0e369ae8-262e-4ddd-a3e8-2d8dbbc2d38c">
+      <database-info product="SQLite" version="3.6.14.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" />
+      <case-sensitivity plain-identifiers="mixed" quoted-identifiers="mixed" />
       <secret-storage>master_key</secret-storage>
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
   </component>
 </project>
