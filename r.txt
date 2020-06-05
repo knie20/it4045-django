@@ -11,7 +11,7 @@ divvycloudprocessmanager==17.5.11
 divvydbupgrade==17.5.11
 divvylibcloud==17.5.6
 divvystaticdata==17.5.11
-Django==1.11
+Django==1.11.29
 docutils==0.12
 ecdsa==0.13
 elasticsearch==1.6.0 
